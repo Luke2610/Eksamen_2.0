@@ -1,0 +1,115 @@
+/* A lot of CSS for the website */
+h1 {
+    font-family: Nunito;
+    color: #3500d3;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: Nunito;
+    color: white;
+}
+
+h3 {
+    font-family: Nunito;
+    color: #3500d3;
+}
+
+p{
+    font-family: Roboto;
+    color: white;
+}
+
+input{
+    background-color: #190061;
+    color: white;
+    padding: 3%;
+}
+.header {
+    padding: 5vh;
+    margin: auto;
+    text-align: center;
+}
+
+body{
+    background-color: #0c0032;
+}
+.matches{
+    background-color: #282828;
+    color: white;
+    margin: auto;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+
+}
+.settings{
+    background-color: #282828;
+    color: white;
+    margin: auto;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+}
+.signup{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282828;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 5vh;
+    width: 20%;
+}
+.fpl{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282828;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 5vh;
+    width: 20%;
+}
+#fpl{
+    padding: 10%;
+}
+
+.box{
+    margin: auto;
+    align-items: center;
+    width: 100%;
+}
+.wrap{
+  width: 49%;
+  margin: auto;
+  display: inline-flex;
+
+}
+.users{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  background: #190061;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;  
+  font-family: Nonito;
+  margin: 10px;
+  color: white;
+}
+.likes{
+    background-color: #282828;
+    color: white;
+    margin: 10px;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+/* Farver:
+#1a1a1d Sort    
+#4e4e50 Gr
+#6f2232 Muted red
+#950740 Pink
+#c3073f Salmon
+*/
