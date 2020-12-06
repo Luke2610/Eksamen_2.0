@@ -138,6 +138,15 @@ app.post("/like", async function (req,res) {
         console.log("Succesful like!")
         res.redirect('secret')
     })
+    
+    /*const loggedInUser = await User.find({username:username})
+    for (i=0; i<loggedInUser[0].likes.length; i++){
+        var e1 = await User.find({username:loggedInUser[0].likes[i]})
+        for(j=0;j=e1[0].likes.length;j++){
+        if (e1[0].likes[j] == username){
+            console.log(e1[j].username)
+        }}
+    }*/
 });
 
 function isLoggedIn(req, res, next) { 
