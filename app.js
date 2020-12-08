@@ -59,16 +59,10 @@ app.get("/register", function (req, res) {
   
 // Handling user signup 
 app.post("/register", function (req, res) { 
-    var username = req.body.username 
     var password = req.body.password
-    var firstname = req.body.firstname
-    var lastname = req.body.lastname
-    var age = req.body.age
-    var gender = req.body.gender
-    var interest = req.body.interest
     
     //creates a new user object and exports it to my MongoDB
-    User.register(new User({ username: username, firstname: firstname, lastname:lastname, age:age, gender:gender, interest:interest }), 
+    User.register(new User({ username: req.body.username, firstname: req.body.firstname, lastname:req.body.lastname, age:req.body.age, gender:req.body.gender, interest:req.body.interest }), 
             password, function (err, user) { 
         if (err) { //if an error occures, return to register page
             console.log(err);
