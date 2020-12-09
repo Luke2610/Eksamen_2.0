@@ -1,4 +1,4 @@
-var express = require("express"), 
+var express = require("express"), //all the required middleware
     mongoose = require("mongoose"), 
     passport = require("passport"), 
     bodyParser = require("body-parser"), 
@@ -8,7 +8,7 @@ var express = require("express"),
     path = require('path');
 
 var app = express(); 
-app.set("view engine", "ejs"); 
+app.set("view engine", "ejs"); //set the view engine to EJS
 app.use(bodyParser.urlencoded({ extended: true })); //get input from HTML with req.body
 app.use(express.static(path.join(__dirname, '/public'))); //access to the static files (CSS)
  
@@ -19,9 +19,9 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.connect('mongodb+srv://Luke2610:Jegharmegetsej@eksamen2020.zubyd.mongodb.net/<dbname>?retryWrites=true&w=majority',{useUnifiedTopology: true}); 
   
 app.use(require("express-session")({ 
-    secret: "Rusty is a dog", 
-    resave: false, 
-    saveUninitialized: false
+    secret: "NodeJS er svært", 
+    saveUninitialized: false,
+    resave: false
 })); 
   
 app.use(passport.initialize()); 
@@ -132,6 +132,9 @@ app.post("/like", async function (req,res) {
         console.log("Succesful like!")
         res.redirect('secret')
     })
+    //----
+    //Matching system
+    //----
     
     /*const loggedInUser = await User.find({username:username})
     for (i=0; i<loggedInUser[0].likes.length; i++){
