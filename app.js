@@ -7,17 +7,17 @@ var express = require("express"), //all the required middleware
     User = require("./models/user.js"),
     path = require('path');
 
-var app = express(); 
-app.set("view engine", "ejs"); //set the view engine to EJS
-app.use(bodyParser.urlencoded({ extended: true })); //get input from HTML with req.body
-app.use(express.static(path.join(__dirname, '/public'))); //access to the static files (CSS)
- 
 mongoose.set('useNewUrlParser', true); 
 mongoose.set('useFindAndModify', false); 
 mongoose.set('useCreateIndex', true); 
 mongoose.set('useUnifiedTopology', true); 
 mongoose.connect('mongodb+srv://Luke2610:Jegharmegetsej@eksamen2020.zubyd.mongodb.net/<dbname>?retryWrites=true&w=majority',{useUnifiedTopology: true}); 
   
+var app = express(); 
+app.set("view engine", "ejs"); //set the view engine to EJS
+app.use(bodyParser.urlencoded({ extended: true })); //get input from HTML with req.body
+app.use(express.static(path.join(__dirname, '/public'))); //access to the static files (CSS)
+ 
 app.use(require("express-session")({ 
     secret: "NodeJS er svært", 
     saveUninitialized: false,
