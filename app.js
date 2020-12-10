@@ -43,6 +43,7 @@ app.get("/", function (req, res) {
   
 // Showing the main page when logged in. Also returns all the users of a specified gender.
 app.get("/secret", isLoggedIn, async function (req, res) { 
+  console.log(username + " has gained access to /secret")
   const loggedInUser = await User.find({username:username})
   //If the loggedInUser is a male, return all females. If female, return male.
   var user = await User.find({gender:'female'})
@@ -54,26 +55,27 @@ app.get("/secret", isLoggedIn, async function (req, res) {
   
 // Show register form when directed to /register
 app.get("/register", function (req, res) { 
+    console.log("A user has connected to /register")
     res.render("register"); 
 }); 
   
 // Handling user signup 
 app.post("/register", function (req, res) { 
+    console.log("A user has attempted to register a new user")
     var password = req.body.password
-    
     //creates a new user object and exports it to my MongoDB
     User.register(new User({ username: req.body.username, firstname: req.body.firstname, lastname:req.body.lastname, age:req.body.age, gender:req.body.gender, interest:req.body.interest }), 
             password, function (err, user) { 
         if (err) { //if an error occures, return to register page
-            console.log(err);
+            console.log(err); //log the error (would often be user already exists)
             return res.render("register")
         } 
   
         passport.authenticate("local")( 
             req, res, function () { 
-            res.render("login");
-            console.log("New User created and added to database.");
+            res.redirect("/login"); //render login
             console.log(user); //console.logging the created user
+            console.log("A new user has been created and stored in the database!");
         }); 
     }); 
 }); 
@@ -101,6 +103,7 @@ app.post("/update", isLoggedIn, function (req,res){
   
 //Showing the login form when directed to /login
 app.get("/login", function (req, res) { 
+    console.log("A user has connected to /login")
     res.render("login"); //render login.ejs
 }); 
   
@@ -109,10 +112,12 @@ app.post("/login", passport.authenticate("local", {failureRedirect: "/login"
 }), function (req, res) { 
     res.redirect('/secret') //if username and password is found, redirect to secret
     username = req.body.username //set username to the logged in user.
+    console.log(username + " has logged in.")
 }); 
   
 //Handling of user logout
-app.get("/logout", function (req, res) { 
+app.get("/logout", function (req, res) {
+    console.log(username + " has logged out of the system") 
     req.logout(); 
     res.redirect("/"); //redirect to / when logged out
 }); 
@@ -147,12 +152,14 @@ app.post("/like", async function (req,res) {
     }*/
 });
 
+//function with authentication
 function isLoggedIn(req, res, next) { 
     if (req.isAuthenticated()) return next(); 
     res.redirect("/login"); 
 } 
-  
-var port = process.env.PORT || 3000; 
+
+//server listen
+var port = process.env.PORT || 4000; 
 app.listen(port, function () { 
-    console.log("Server Has Started!"); 
+    console.log("The server has is up at port 4000!"); 
 }); 
