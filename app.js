@@ -1,7 +1,7 @@
 var express = require("express"), //all the required middleware
+    bodyParser = require("body-parser"), 
     mongoose = require("mongoose"), 
     passport = require("passport"), 
-    bodyParser = require("body-parser"), 
     LocalStrategy = require("passport-local"), 
     passportLocalMongoose = require("passport-local-mongoose"), 
     User = require("./models/user.js"),
@@ -161,5 +161,5 @@ function isLoggedIn(req, res, next) {
 //server listen
 var port = process.env.PORT || 4000; 
 app.listen(port, function () { 
-    console.log("The server has is up at port 4000!"); 
+    console.log("The server is up at port 4000!"); 
 }); 
