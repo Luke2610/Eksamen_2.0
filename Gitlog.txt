@@ -1,0 +1,68 @@
+commit 36a023693e8bfdee6736fb9e413b0237ebd0a2d0
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Thu Dec 10 22:01:53 2020 +0100
+
+    FINAL
+
+commit eb057d595e03500df0fd549d52ddc3408ea4e02e
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Thu Dec 10 22:00:23 2020 +0100
+
+    Final final commit
+
+commit 403a20e339cbc4b82895dc37c750674df9a29632
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Thu Dec 10 21:29:37 2020 +0100
+
+    Final Commit? Maybe
+
+commit c368b2575de5d332d8ad15e6864d0815ac718b8f
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Thu Dec 10 15:45:52 2020 +0100
+
+    Update
+
+commit 498b9dda9d47372a4512baa50c3b219035571bff
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Wed Dec 9 16:41:18 2020 +0100
+
+    comments
+
+commit 2b523a099a46efde6c2aa4f3337c3b17b434481b
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Wed Dec 9 00:37:39 2020 +0100
+
+    commit
+
+commit 8014d03f1dbb97bb08759342937db0357946f294
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Mon Dec 7 13:57:24 2020 +0100
+
+    New commit!
+
+commit 863a3a5f48de0bd0073945e51a4810244efbe24d
+Merge: 97075bd 0299726
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Sun Dec 6 15:16:26 2020 +0100
+
+    Merge branch 'main' of https://github.com/Luke2610/Eksamen_2.0 into main
+
+commit 97075bda4152c6c0ef295df7e2143a32eca26b10
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Sun Dec 6 15:15:55 2020 +0100
+
+    Commit
+
+commit 02997260866b0297d0d7d0662e17343c7b4f580a
+Author: Lucas Peter Veis <72746979+Luke2610@users.noreply.github.com>
+Date:   Sat Dec 5 16:02:47 2020 +0100
+
+    Create README.md
+    
+    Et eller andet gik galt med min første GIT, så denne indeholder ikke de første versioner.
+
+commit 8cfdc16ce5172768cb01ead037dd54c4aaebd7c6
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Sat Dec 5 15:57:15 2020 +0100
+
+    Commit
