@@ -1,5 +1,10 @@
 var mongoose=require("mongoose");
 var passportlocalmongoose=require("passport-local-mongoose");
+
+//-----
+//User Schema / User class
+//-----
+
 var UserSchema=mongoose.Schema({
     username: {type: String, unique:true}, //the username must be unique
     firstname: String,

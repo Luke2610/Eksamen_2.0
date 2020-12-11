@@ -1,3 +1,15 @@
+commit 9398ea3edd98501f48637c17851083adfd2053bb
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Thu Dec 10 22:08:13 2020 +0100
+
+    FINALO
+
+commit 5c773c11907a6bacdaa19a771ebbe7f1babfe891
+Author: Lucas <luve20ac@student.cbs.dk>
+Date:   Thu Dec 10 22:03:59 2020 +0100
+
+    Gitlog
+
 commit 36a023693e8bfdee6736fb9e413b0237ebd0a2d0
 Author: Lucas <luve20ac@student.cbs.dk>
 Date:   Thu Dec 10 22:01:53 2020 +0100
